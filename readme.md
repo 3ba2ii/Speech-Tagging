@@ -1,48 +1,48 @@
-## Introduction
+# Part-of-Speech Tagging 
 
-In this notebook, you'll use the [Pomegranate](https://github.com/jmschrei/pomegranate) library to build a hidden Markov model for part of speech tagging with a [universal tagset](http://www.petrovi.de/data/universal.pdf). Hidden Markov models have been able to achieve >96% tag accuracy with larger tagsets on realistic text corpora. Hidden Markov models have also been used for speech recognition and speech generation, machine translation, gene recognition for bioinformatics, and human gesture recognition for computer vision, and more.
+Part-of-Speech Tagging (POS Tagging) is the process of marking up a word in a text (corpus) as corresponding to a particular part of speech, based on both its definition and its context. In this project we used the [Pomegranate](https://github.com/jmschrei/pomegranate) library to build a hidden Markov model for part of speech tagging with a [universal tagset](http://www.petrovi.de/data/universal.pdf) that has been able to achieve >97% tag accuracy.
+<br />
 
-The notebook already contains some code to get you started. You only need to add some new functionality in the areas indicated to complete the project; you will not need to modify the included code beyond what is requested. Sections that begin with **'IMPLEMENTATION'** in the header indicate that you must provide code in the block that follows. Instructions will be provided for each section, and the specifics of the implementation are marked in the code block with a `'TODO'` statement. Please be sure to read the instructions carefully!
 
-## Getting Started
+![POS Tagging](https://i.ibb.co/0nLD1pp/Screen-Shot-2020-06-05-at-2-31-40-AM.png)
 
-You can choose one of two ways to complete the project. The first method is to use the Workspace embedded in the classroom in the next lesson. The Workspace has already been configured with all the required project files for you to complete the project. Simply open the lesson, complete the sections indicated in the Jupyter notebook, and then click the "submit project" button.
 
-**NOTE:** If you are prompted to select a kernel when you launch a notebook, choose the **Python 3** kernel.
+<br />
 
-Alternatively, you can download a copy of the project from GitHub [here](https://github.com/udacity/hmm-tagger) and then run a Jupyter server locally with [Anaconda](https://www.anaconda.com/download/).
+## Description 
+ 
+This model takes an input any sentence or sequence of words and outputs a tag of 12 different tags ('VERB','NOUN','ADV',...) for each word based based on both its definition and its context.
 
-**NOTES:** These steps are **not** required if you are using the project Workspace.
+<br />
 
-0. (Optional) The provided code includes a function for drawing the network graph that depends on [GraphViz](http://www.graphviz.org/). You must manually install the GraphViz executable for your OS before the steps below or the drawing function will not work.
 
-1. Open a terminal and clone the project repository:
+### Prerequisites
+
+This project uses [opencv](https://pypi.org/project/opencv-python/) and [PyTorch](https://pytorch.org/docs/stable/index.html) to install these libraries.
+
+##### Install OpenCv :
+```bash
+pip install opencv-python
 ```
-$ git clone https://github.com/udacity/hmm-tagger
+##### Install PyTorch :
+```bash
+pip3 install torch torchvision
 ```
+<br />
 
-3. Switch to the project folder and create a conda environment (note: you must already have Anaconda installed):
-```
-$ cd hmm-tagger
-hmm-tagger/ $ conda env create -f hmm-tagger.yaml
-```
 
-4. Activate the conda environment, then run the jupyter notebook server. (Note: windows users should run `activate hmm-tagger`)
-```
-hmm-tagger/ $ source activate hmm-tagger
-(hmm-tagger) hmm-tagger/ $ jupyter notebook
-```
 
-Depending on your system settings, Jupyter will either open a browser window, or the terminal will print a URL with a security token. If the terminal prints a URL, simply copy the URL and paste it into a browser window to load the Jupyter browser. Once you load the Jupyter browser, select the project notebook (HMM tagger.ipynb) and follow the instructions inside to complete the project.
+## Authors
 
-See below for project submission instructions.
+- **Ahmed Abd-Elbakey Ghonem** - [**Github**](https://github.com/3ba2ii)
 
-## Evaluation
 
-Your project will be reviewed by a Udacity reviewer against the project rubric [here](https://review.udacity.com/#!/rubrics/1429/view). Review this rubric thoroughly, and self-evaluate your project before submission. All criteria found in the rubric must meet specifications for you to pass.
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Submission
+Please make sure to update tests as appropriate.
 
-Once you have completed all of the code implementations, you need to finalize your work by exporting the iPython Notebook as an HTML document. Before exporting the notebook to html, all of the code cells need to have been run so that reviewers can see the final implementation and output. You must then export the notebook by running the last cell in the notebook, or by using the menu above and navigating to File -> Download as -> HTML (.html) Your submissions should include both the html and ipynb files.
 
-Add the "hmm tagger.ipynb" and "hmm tagger.html" files to a zip archive and submit it with the button below. (**NOTE:** If you complete the project in the workspace, then you can submit directly using the "submit" button in the workspace.)
+
+
+
