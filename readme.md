@@ -16,20 +16,6 @@ This model takes an input any sentence or sequence of words and outputs a tag of
 <br />
 
 
-### Prerequisites
-
-This project uses [opencv](https://pypi.org/project/opencv-python/) and [PyTorch](https://pytorch.org/docs/stable/index.html) to install these libraries.
-
-##### Install OpenCv :
-```bash
-pip install opencv-python
-```
-##### Install PyTorch :
-```bash
-pip3 install torch torchvision
-```
-<br />
-
 
 
 ## Authors
