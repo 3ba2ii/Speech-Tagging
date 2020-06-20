@@ -9,7 +9,7 @@ Part-of-Speech Tagging (POS Tagging) is the process of marking up a word in a te
 
 <br />
 
-## Description 
+## Descriptions
  
 This model takes an input any sentence or sequence of words and outputs a tag of 12 different tags ('VERB','NOUN','ADV',...) for each word based based on both its definition and its context.
 
