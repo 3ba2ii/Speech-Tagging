@@ -1,6 +1,6 @@
 # Part-of-Speech Tagging 
 
-Part-of-Speech Tagging ```POS Tagging``` is the process of marking up a word in a text ```corpus``` as corresponding to a particular part of speech, based on both its definition and its context. In this project we developed a Hidden Markov Model (HMM) to build the 
+Part-of-Speech Tagging ```POS Tagging``` is the process of marking up a word in a text ```corpus``` as corresponding to a particular part of speech, based on both its definition and its context. In this project we developed a Hidden Markov Model (HMM) to build the model.
 
 ![POS Tagging](/_post-hmm.png)
 
