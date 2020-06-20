@@ -11,7 +11,7 @@ Part-of-Speech Tagging ```POS Tagging``` is the process of marking up a word in 
  
 This model takes an input any sentence or sequence of words and pre-process it before passing it to the HMM then outputs a probability of each word to what tag on it outputs a tag of 12 different tags ('VERB','NOUN','ADV',...) for each word based on both its definition and its context.
 
-<br />
+
 ## Content
 
 - [Part-of-Speech Tagging](#part-of-speech-tagging)
