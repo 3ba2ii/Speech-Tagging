@@ -13,6 +13,7 @@ This model takes an input any sentence or sequence of words and pre-process it b
 
 <br />
 ## Content
+
 - [Part-of-Speech Tagging](#part-of-speech-tagging)
   - [Description](#description)
   - [Content](#content)
